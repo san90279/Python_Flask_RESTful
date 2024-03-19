@@ -59,7 +59,7 @@ def delete_task(id):
             task = result_item
             break
     if task is None:
-        return jsonify({'error': 'Task not found'}), 404
+        return jsonify({'error': 'Result not found'}), 404
     
     result_list.result.remove(task)
     return '', 200
